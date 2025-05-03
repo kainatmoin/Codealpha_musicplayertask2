@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Music Player</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="player">
+    <h2>🎵 My Music Player</h2>
+    <ul id="playlist">
+        <li data-src="128-Finding Her - Kushagra 128 Kbps.mp3">Finding Her</li>
+        <li data-src="128-Heer - Haider Ali 128 Kbps.mp3">Heer - Haider Ali</li>
+        <li data-src="Aurora_-_Runaway_CeeNaija.com_.mp3">Runaway - Aurora</li>
+        <li data-src="Billie Eilish - lovely (Lyrics) ft. Khalid.mp4">Lovely - Billie Eilish</li>
+        <li data-src="Departure Lane - Talha Anjum (pagalall.com).mp3">Departure Lane - Talha Anjum</li>
+        <li data-src="Pal Pal Afusic (pagalall.com).mp3">Pal Pal - Afusic</li>
+      </ul>
+      
+
+    <div class="controls">
+      <button id="prev">⏮️</button>
+      <button id="play">▶️</button>
+      <button id="next">⏭️</button>
+    </div>
+
+    <input type="range" id="progress" value="0">
+    <input type="range" id="volume" min="0" max="1" step="0.1" value="1">
+
+    <audio id="audioPlayer"></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
